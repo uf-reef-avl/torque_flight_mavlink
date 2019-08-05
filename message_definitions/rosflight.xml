@@ -149,5 +149,15 @@
       <message id="192" name="ROSFLIGHT_VERSION">
         <field type="char[50]" name="version"/>
       </message>
+      <message id="200" name="ADDED_TORQUE">
+        <field type="float" name="x"/>
+        <field type="float" name="y"/>
+        <field type="float" name="z"/>
+      </message>
+      <message id="201" name="TOTAL_TORQUE">
+        <field type="float" name="x"/>
+        <field type="float" name="y"/>
+        <field type="float" name="z"/>
+      </message>
     </messages>
 </mavlink>

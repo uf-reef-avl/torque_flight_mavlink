@@ -146,6 +146,8 @@ typedef enum ROSFLIGHT_RANGE_TYPE
 #include "./mavlink_msg_rosflight_output_raw.h"
 #include "./mavlink_msg_rosflight_status.h"
 #include "./mavlink_msg_rosflight_version.h"
+#include "./mavlink_msg_added_torque.h"
+#include "./mavlink_msg_total_torque.h"
 
 #ifdef __cplusplus
 }
