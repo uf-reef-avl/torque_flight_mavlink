@@ -57,7 +57,7 @@ static inline uint16_t mavlink_msg_added_torque_pack(uint8_t system_id, uint8_t 
         memcpy(_MAV_PAYLOAD_NON_CONST(msg), &packet, MAVLINK_MSG_ID_ADDED_TORQUE_LEN);
 #endif
 
-	msg->msgid = MAVLINK_MSG_ID_ADDED_TORQUE_LEN;
+	msg->msgid = MAVLINK_MSG_ID_ADDED_TORQUE;
 #if MAVLINK_CRC_EXTRA
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_ADDED_TORQUE_LEN, MAVLINK_MSG_ID_ADDED_TORQUE_CRC);
 #else
@@ -96,7 +96,7 @@ static inline uint16_t mavlink_msg_added_torque_pack_chan(uint8_t system_id, uin
         memcpy(_MAV_PAYLOAD_NON_CONST(msg), &packet, MAVLINK_MSG_ID_ADDED_TORQUE_LEN);
 #endif
 
-	msg->msgid = MAVLINK_MSG_ID_ADDED_TORQUE_LEN;
+	msg->msgid = MAVLINK_MSG_ID_ADDED_TORQUE;
 #if MAVLINK_CRC_EXTRA
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_ADDED_TORQUE_LEN, MAVLINK_MSG_ID_ADDED_TORQUE_CRC);
 #else
