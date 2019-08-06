@@ -92,7 +92,7 @@ static inline uint16_t mavlink_msg_added_torque_pack_chan(uint8_t system_id, uin
 	packet.x = x;
 	packet.y = y;
 	packet.z = z;
-    
+
         memcpy(_MAV_PAYLOAD_NON_CONST(msg), &packet, MAVLINK_MSG_ID_ADDED_TORQUE_LEN);
 #endif
 
@@ -183,7 +183,7 @@ static inline void mavlink_msg_added_torque_send_buf(mavlink_message_t *msgbuf, 
 	_mav_put_float(buf, 0, x);
 	_mav_put_float(buf, 4, y);
 	_mav_put_float(buf, 8, z);
-	
+
 #if MAVLINK_CRC_EXTRA
     _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_ADDED_TORQUE, buf, MAVLINK_MSG_ID_ADDED_TORQUE_LEN, MAVLINK_MSG_ID_ADDED_TORQUE_CRC);
 #else
@@ -216,7 +216,7 @@ static inline void mavlink_msg_added_torque_send_buf(mavlink_message_t *msgbuf, 
  */
 static inline float mavlink_msg_added_torque_get_x(const mavlink_message_t* msg)
 {
-	return _MAV_RETURN_uint8_t(msg,  0);
+	return _MAV_RETURN_float(msg,  0);
 }
 
 /**
