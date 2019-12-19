@@ -18,7 +18,7 @@
 #endif
 
 #ifndef MAVLINK_CRC_EXTRA
-#define MAVLINK_CRC_EXTRA 0 //1
+#define MAVLINK_CRC_EXTRA 0 // 1
 #endif
 
 #include "version.h"
